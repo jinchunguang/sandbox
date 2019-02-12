@@ -20,4 +20,10 @@ class Controller extends BaseController
         ]);
         return Jsonify::success('Hello World!');
     }
+
+    public function test(){
+        //分发事件
+        //event(new \App\Events\OrderShippedEvent(10000));
+        Jsonify::success([]);
+    }
 }
